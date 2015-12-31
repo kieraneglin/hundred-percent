@@ -29,6 +29,12 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+# Use cancancan for user permissions
+gem 'cancancan'
+
+# Trying out something new to avoid the 'boostrap look'
+gem 'foundation-rails'
+
 gem 'slim-rails'
 
 # Use Capistrano for deployment
@@ -36,6 +42,14 @@ gem 'slim-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem "awesome_print"
+
+  gem "interactive_editor"
+
+  gem "quiet_assets"
+
+  gem "hirb"
+
   gem 'byebug'
 end
 
