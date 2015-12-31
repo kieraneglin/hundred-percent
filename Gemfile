@@ -29,6 +29,8 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+gem 'simple_form'
+
 # Use cancancan for user permissions
 gem 'cancancan'
 
