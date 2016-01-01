@@ -1,0 +1,35 @@
+/ TODO: Maybe use localization for translations
+.row
+  .medium-8.medium-offset-2.large-6.large-offset-3.columns
+    .signup-panel
+      p.welcome Create a new account!
+      =simple_form_for @user do |f|
+        .row.collapse
+          .small-2.columns
+            span.prefix
+              i.fi-torso-female
+          .small-10.columns
+            =f.input :name, placeholder: 'First Name', label: false
+        .row.collapse
+          .small-2.columns
+            span.prefix
+              i.fi-mail
+          .small-10.columns
+            =f.input :email, placeholder: 'Email Address', label: false
+        .row.collapse
+          .small-2.columns
+            span.prefix
+              i.fi-lock
+          .small-10.columns
+            =f.input :password, placeholder: 'Password', label: false
+        .row.collapse
+          =f.button :submit, "Create An Account", class: "button"
+      p
+        | Already have an account?
+        a href="#"  Login here
+
+/ =simple_form_for @user do |f|
+/   =f.input :name, placeholder: "test", label: false
+/   =f.input :email
+/   =f.input :password
+/   =f.submit
