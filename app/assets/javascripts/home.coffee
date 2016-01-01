@@ -2,5 +2,6 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
-  # $('h1').on "click", ->
-  #   console.log "clicked"
+  $('.alert-box').slideDown(400).delay(3000).slideUp(400, ->
+    $('.index-alert').remove()
+    )

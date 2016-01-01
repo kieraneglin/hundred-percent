@@ -4,8 +4,8 @@ class UsersController < ApplicationController
   end
   def create
     @user = User.new allowed_params
-    if @user.valid?
-      redirect_to root_path
+    if @user.save
+      redirect_to root_path, notice: "Account created successfully!"
     else
       render :new
     end
