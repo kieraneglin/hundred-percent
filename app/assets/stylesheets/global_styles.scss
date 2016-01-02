@@ -1,3 +1,42 @@
+
+body.sign-up {
+  background: #54819F image-url('signup-blurred-bg.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.input > .error {
+  border-radius: 0px 0px 2px 2px;
+}
+.signup-panel {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  padding: 15px;
+  margin-top: 50px;
+  i {
+    font-size: 30px;
+    line-height: 50px;
+    color: #999;
+  }
+  form {
+    input,
+    span {
+      height: 50px;
+    }
+  }
+  .welcome {
+    font-size: 26px;
+    text-align: center;
+    margin-left: 0;
+  }
+  p {
+    font-size: 13px;
+    font-weight: 200;
+    margin-left: 25%;
+  }
+}
 .alert-box {
   background: #f7f7f7;
   color: #333;
@@ -50,16 +89,30 @@
   .index-alert {
     left: 0;
   }
+  .signup-panel .button {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 /* Medium and up */
-@media screen and (min-width: 40em) {}
+@media screen and (min-width: 40em) {
+  .signup-panel .button {
+    margin-left: 28%;
+  }
+}
 
 /* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+}
 
 /* Large and up */
-@media screen and (min-width: 64em) {}
+@media screen and (min-width: 64em) {
+
+}
 
 /* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+}

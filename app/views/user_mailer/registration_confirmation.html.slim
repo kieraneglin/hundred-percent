@@ -1,0 +1,8 @@
+h2
+  | Hi #{@user.name},
+
+p
+  | Thanks for registering! To confirm your registration click the URL below.
+
+  a
+    =confirm_email_url @user.confirm_token

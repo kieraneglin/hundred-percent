@@ -53,6 +53,8 @@ group :development, :test do
   gem "hirb"
 
   gem 'byebug'
+
+  gem 'letter_opener'
 end
 
 group :development do
