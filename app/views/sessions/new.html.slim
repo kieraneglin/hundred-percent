@@ -1,4 +1,33 @@
-=form_tag sessions_path do
-  =text_field_tag :email
-  =password_field_tag :password
-  =submit_tag 
+/ IDEA: Maybe use localization for translations?
+-content_for :title, "Sign In"
+-content_for :body_class, "sign-in"
+
+.row
+  .medium-8.medium-offset-2.large-6.large-offset-3.columns
+    .signup-panel
+      p.welcome Sign In
+      =form_tag sessions_path do
+      
+        .row.collapse
+          .small-2.columns
+            span.prefix
+              i.fi-mail
+          .small-10.columns
+            =text_field_tag :email, nil, placeholder: 'Email Adress'
+        .row.collapse
+          .small-2.columns
+            span.prefix
+              i.fi-lock
+          .small-10.columns
+            =password_field_tag :password, nil, placeholder: 'Password'
+        .row.collapse
+          .small-12.columns
+            =submit_tag 'Sign In', class: 'button expand'
+      p
+        | Need to create an account?
+        =link_to ' Sign Up Here',  new_user_path
+
+/ =form_tag sessions_path do
+/   =text_field_tag :email
+/   =password_field_tag :password
+/   =submit_tag 

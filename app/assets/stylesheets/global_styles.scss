@@ -1,13 +1,21 @@
-
-body.sign-up {
-  background: #54819F image-url('signup-blurred-bg.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body{
+  &.sign-up {
+    background: #54819F image-url('signup-blurred-bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  &.sign-in {
+    background: #54819F image-url('signin-blurred-bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 .input > .error {
-  border-radius: 0px 0px 2px 2px;
+  border-radius: 0 0 2px 2px;
 }
 .signup-panel {
   border-radius: 5px;
@@ -90,15 +98,17 @@ body.sign-up {
     left: 0;
   }
   .signup-panel .button {
-    width: 100%;
-    margin-left: 0;
+
+    // width: 100%;
+    // margin-left: 0;
   }
 }
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
   .signup-panel .button {
-    margin-left: 28%;
+
+    // margin-left: 28%;
   }
 }
 

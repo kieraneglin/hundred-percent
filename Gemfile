@@ -35,7 +35,7 @@ gem 'simple_form'
 gem 'cancancan'
 
 # Trying out something new to avoid the 'boostrap look'
-gem 'foundation-rails'
+gem 'foundation-rails', '5.5.3.2'
 
 gem 'slim-rails'
 

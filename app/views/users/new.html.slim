@@ -26,8 +26,8 @@
           .small-10.columns
             =f.input :password, placeholder: 'Password - At least 8 characters', label: false
         .row.collapse
-          =f.button :submit, "Create An Account", class: "button"
+          .small-12.columns
+            =f.button :submit, "Create An Account", class: "button expand"
       p
         | Already have an account?
-        / TODO: Make this go somewhere
-        a href="#"  Login here
+        =link_to ' Sign In Here', session_path
